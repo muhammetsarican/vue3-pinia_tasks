@@ -18,7 +18,7 @@ export default {
       taskStore.addNewTask({
         title: newTask.value,
         isFav: false,
-        id: taskStore.totalCount + 1,
+        id: String(Math.floor(Math.random() * 1000)),
       });
       newTask.value = "";
     };
